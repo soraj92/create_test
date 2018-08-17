@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>React App</title>
+  </head>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+  $(document).ready(function() {
+  $(".bxslider").bxSlider({
+    auto: true,
+    //autoControls: true,
+    pager: false,
+    slideWidth: 1200,
+    speed: 1500,
+    pause: 2500,
+    captions: true,
+    mode: "fade"
+  });
+});
+</script>
+
+  <body>
+    <header class="top_header">
+      <div class="header_row">
+        <div class="header_column">
+          <ul class="list">
+            <li class="list_item">home</li>
+            <li class="list_item">제품</li>
+            <li class="list_item">자료실</li>
+            <li class="list_item">솔루션</li>
+            <li class="list_item">회사정보</li>
+          </ul>
+        </div>
+        <div class="header_column">
+          <img src="./img/logo.png" alt="?" />
+        </div>
+        <div class="header_column helpu">
+          <a href="http://helpu.kr/01pair">
+            <img
+              class="banner"
+              src="http://helpu.co.kr/images/sample_banner/banner_sample2_2.gif"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="main_img">
+        <div class="bxslider">
+          <div class="main_img_item">
+            <a href="#">
+              <img src="./img/PP-480BT_main.png" alt="" title="PP-480BT">
+            </a>
+          </div>
+          <div class="maig_img_item">
+            <a href="#">
+              <img src="./img/PP-480D_main.png" alt="" title="PP-480D">
+            </a>
+          </div>
+          <div class="maig_img_item">
+            <a href="#">
+              <img src="./img/PP-480E_main.png" alt="" title="PP-480E">
+            </a>
+          </div>
+          <div class="maig_img_item">
+            <a href="#">
+              <img src="./img/ScanB_main.png" alt="" title="ScanB">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="product_start">
+        <div class="product_start_line"> </div>
+        <span>Product Of Pair</span>
+      </section>
+
+      <section class="product">
+        <div class="product_item">
+          <img class="product_img" src="./img/PF-460D_1.jpg" alt="?">
+          <span class="product_name">PP-480BT</span>
+          <span class="product_price">160,000원</span>
+          <div class="product_info">
+            <i class="fas fa-info-circle fa-lg product_icon"></i>
+            <span class="product_icon_text">상세내용</span>
+          </div>
+        </div>
+        <div class="product_item">
+          <img class="product_img" src="./img/PF-460D_4.jpg" alt="?">
+          <span class="product_name">PP-480D</span>
+          <span class="product_price">160,000원</span>
+          <div class="product_info">
+            <i class="fas fa-info-circle fa-lg product_icon"></i>
+            <span class="product_icon_text">상세내용</span>
+          </div>
+        </div>
+        <div class="product_item">
+          <img class="product_img" src="./img/PP-480E_1.jpg" alt="?">
+          <span class="product_name">PP-480E</span>
+          <span class="product_price">160,000원</span>
+          <div class="product_info">
+            <i class="fas fa-info-circle fa-lg product_icon"></i>
+            <span class="product_icon_text">상세내용</span>
+          </div>
+        </div>
+        <div class="product_item">
+          <img class="product_img" src="./img/scanB.jpg" alt="?">
+          <span class="product_name">ScanB</span>
+          <span class="product_price">160,000원</span>
+          <div class="product_info">
+            <i class="fas fa-info-circle fa-lg product_icon"></i>
+            <span class="product_icon_text">상세내용</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+</html>
