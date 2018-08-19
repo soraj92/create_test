@@ -17,6 +17,7 @@
     //autoControls: true,
     pager: false,
     slideWidth: 1200,
+    controls: false,
     speed: 1500,
     pause: 2500,
     captions: true,
@@ -24,20 +25,39 @@
   });
 });
 </script>
-
   <body>
     <header class="top_header">
       <div class="header_row">
         <div class="header_column">
-          <ul class="list">
-            <li class="list_item">home</li>
-            <li class="list_item">제품</li>
-            <li class="list_item">자료실</li>
-            <li class="list_item">솔루션</li>
-            <li class="list_item">회사정보</li>
-          </ul>
+          <div class="nav_wrapper">
+            <div class="spinner-master">
+              <input type="checkbox" id="spinner-form" />
+              <label for="spinner-form" class="spinner-spin">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+              </label>
+            </div>
+            <nav id="menu" class="menu">
+              <ul class="dropdown">
+                <li ><a href="#Link" title="Home">Home</a></li>
+                <li ><a href="#Link" title="Product">Product</a>
+                  <ul >
+                    <li ><a href="#Link" title="PP-480BT ">PP-480BT</a></li>
+                    <li ><a href="#Link" title="PP-480D">PP-480D</a></li>
+                    <li ><a href="#Link" title="PP-480E">PP-480E</a></li>
+                    <li ><a href="#Link" title="ScanB">ScanB</a></li>
+                    <li ><a href="#Link" title="SJ-4800D">SJ-4800D</a></li>
+                  </ul>
+                </li>
+                <li ><a href="#Link" title="자료실">자료실</a></li>
+                <li ><a href="#Link" title="Solution">Solution</a></li>
+                <li ><a href="#Link" title="Company">Company</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="header_column">
+        <div class="header_column logo">
           <img src="./img/logo.png" alt="?" />
         </div>
         <div class="header_column helpu">
@@ -84,44 +104,90 @@
       </section>
 
       <section class="product">
-        <div class="product_item">
-          <img class="product_img" src="./img/PF-460D_1.jpg" alt="?">
-          <span class="product_name">PP-480BT</span>
-          <span class="product_price">160,000원</span>
-          <div class="product_info">
-            <i class="fas fa-info-circle fa-lg product_icon"></i>
-            <span class="product_icon_text">상세내용</span>
+        <div class="product_column">
+          <div class="product_item">
+            <img class="product_img" src="./img/PF-460D_1.jpg" alt="?">
+            <span class="product_name">PP-480BT</span>
+            <span class="product_price">160,000원</span>
+            <div class="product_info">
+              <i class="fas fa-info-circle fa-lg product_icon"></i>
+              <span class="product_icon_text">상세내용</span>
+            </div>
           </div>
         </div>
-        <div class="product_item">
-          <img class="product_img" src="./img/PF-460D_4.jpg" alt="?">
-          <span class="product_name">PP-480D</span>
-          <span class="product_price">160,000원</span>
-          <div class="product_info">
-            <i class="fas fa-info-circle fa-lg product_icon"></i>
-            <span class="product_icon_text">상세내용</span>
+        <div class="product_column">
+          <div class="product_item">
+            <img class="product_img" src="./img/PF-460D_4.jpg" alt="?">
+            <span class="product_name">PP-480D</span>
+            <span class="product_price">160,000원</span>
+            <div class="product_info">
+              <i class="fas fa-info-circle fa-lg product_icon"></i>
+              <span class="product_icon_text">상세내용</span>
+            </div>
           </div>
         </div>
-        <div class="product_item">
-          <img class="product_img" src="./img/PP-480E_1.jpg" alt="?">
-          <span class="product_name">PP-480E</span>
-          <span class="product_price">160,000원</span>
-          <div class="product_info">
-            <i class="fas fa-info-circle fa-lg product_icon"></i>
-            <span class="product_icon_text">상세내용</span>
+        <div class="product_column">
+          <div class="product_item">
+            <img class="product_img" src="./img/PP-480E_1.jpg" alt="?">
+            <span class="product_name">PP-480E</span>
+            <span class="product_price">160,000원</span>
+            <div class="product_info">
+              <i class="fas fa-info-circle fa-lg product_icon"></i>
+              <span class="product_icon_text">상세내용</span>
+            </div>
           </div>
         </div>
-        <div class="product_item">
-          <img class="product_img" src="./img/scanB.jpg" alt="?">
-          <span class="product_name">ScanB</span>
-          <span class="product_price">160,000원</span>
-          <div class="product_info">
-            <i class="fas fa-info-circle fa-lg product_icon"></i>
-            <span class="product_icon_text">상세내용</span>
+        <div class="product_column">
+          <div class="product_item">
+            <img class="product_img" src="./img/scanB.jpg" alt="?">
+            <span class="product_name">ScanB</span>
+            <span class="product_price">160,000원</span>
+            <div class="product_info">
+              <i class="fas fa-info-circle fa-lg product_icon"></i>
+              <span class="product_icon_text">상세내용</span>
+            </div>
           </div>
         </div>
       </section>
     </main>
-  </body>
 
+    <footer class="footer">
+      <div class="footer_row">
+        <div class="footer_column">
+          <div class="footer_info_head">고객센터 C/S Center</div>
+          <div class="footer_info">전화 : (02) 555 - 2893</div>
+          <div class="footer_info">팩스 : (02) ??? - ????</div>
+          <div class="footer_info">mail : pair000321@gmail.com</div>
+          <div class="footer_info">카카오 : ???</div>
+          <div class="footer_info">오전 9시부터 오후 6시까지 상담가능합니다.</div>
+        </div>
+        <div class="footer_column">
+          <div class="footer_info_head">pair 무통장 계좌번호(예금주:???)</div>
+          <div class="footer_info">국민은행 : ???-??????-??????</div>
+          <div class="footer_info">우리은행 : ???-??????-??????</div>
+          <div class="footer_info">신한은행 : ???-??????-??????</div>
+          <div class="footer_info">농협 : ???-??????-??????</div>
+        </div>
+        <div class="footer_column">
+          <div class="footer_info_head">회사 정보</div>
+          <div class="footer_info">상호 : pair</div>
+          <div class="footer_info">대표 : 최??</div>
+          <div class="footer_info">주소 : 서울시 동작구 남부순환로 2021, 5층</div>
+          <div class="footer_info">개인정보관리 책임자 : ???(???@????.???)</div>
+          <div class="footer_info">사업자 등록번호 : ???-??-?????</div>
+          <div class="footer_info">통신판매업 신고 : ??????????</div>
+        </div>
+        <div class="footer_column">
+          <div class="footer_info">근무시간 : 월 ~ 금 AM 9:00 ~ PM 7:00</div>
+          <div class="footer_info">점심시간 : PM12 :00 ~ PM 1 : 00</div>
+          <div class="footer_info">고객센터 : AM 10: 00 ~ PM6 : 00</div>
+        </div>
+      </div>
+      <div class="footer_row">
+        <p class="footer_comment">© PAIR Co., Ltd. Copyright 2018. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

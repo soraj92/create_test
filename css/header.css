@@ -11,6 +11,7 @@
 
 .top_header .header_row {
   max-width: 1290px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -21,9 +22,11 @@
   display: flex;
   justify-content: space-between;
 } */
-
+.header_row .header_column.logo {
+  width: 10%;
+}
 .header_row .header_column {
-  width: 33.3%;
+  width: 45%;
   text-align: center;
 }
 
