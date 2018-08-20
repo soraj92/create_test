@@ -25,6 +25,17 @@
 .header_row .header_column.logo {
   width: 10%;
 }
+
+.header_column.logo img {
+  width: 110px;
+  transition: transform 1s ease-in-out;
+}
+
+.header_column.logo img:hover {
+  width: 110px;
+  transform: scale(1.2);
+}
+
 .header_row .header_column {
   width: 45%;
   text-align: center;
