@@ -1,14 +1,23 @@
-const myAge = 27;
-let earlyYears=2;
-earlyYears*=10.5;
-let laterYears=myAge-2;
-laterYears*=4;
+let test = {
+    _num:1
+    ,
+    sora() {
+        return this.num;
+    },
+    get num() {
+        return this._num;
+    }
+}
 
-console.log(earlyYears);
-console.log(laterYears);
+console.log(test._num);
+console.log(test.sora());
+console.log(test.num);
 
-let myAgeInDogYears = earlyYears+laterYears;
+let bikes = {
+    schwinn: 'blue',
+    trek: 'black'
+}
 
-const myName="sora".toLowerCase();
-
-console.log(`my name is ${myName}. i am ${myAgeInDogYears} old in dog years`);
+bikes['specialized'] = 'red';
+bikes.te = 'blue';
+console.log(bikes);
