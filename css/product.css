@@ -1,79 +1,67 @@
-.product {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.product_column {
-  /* margin: 0 auto; */
-}
-
-.product_item {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: rgb(236, 236, 236);
-  border-radius: 10%;
-  padding: 20px 20px;
-  margin-top: 30px;
-  box-shadow: 3px 2px 7px 4px #999595;
-}
-
-.product_item .product_img {
-  width: 180px;
-  height: 180px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.product_item .product_name {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.product_item .product_price {
-  margin-bottom: 15px;
-}
-
-.product_info {
-  background-color: rgba(251, 255, 241, 0.8);
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: inset 0 2px 15px #c3c3c3;
-}
-
-.product_icon {
-  color: red;
-  animation: 4s rotateFriend infinite ease-in-out;
-}
-
-@keyframes rotateFriend {
-  0% {
-    transform: rotateY(0deg);
-  }
-  50% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.product_start {
+.product_title {
   width: 100%;
-  text-align: center;
-  margin-bottom: 70px;
+  margin-top: 65px;
 }
 
-.product_start .product_start_line {
-  width: 20%;
-  border-bottom: 3px solid black;
+.product_title_row {
+  max-width: 1290px;
   margin: 0 auto;
+  display: flex;
 }
 
-.product_start span {
-  font-size: 50px;
-  font-weight: 700;
+.product_title_columns {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.product_title_columns_last {
+  text-align: right;
+}
+
+.product_one {
+  margin-top: 75px;
+  width: 100%;
+}
+
+.product_one_row {
+  max-width: 1290px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.product_one_columns {
+  border: 1px solid rgb(0, 0, 0);
+  flex: 1;
+}
+
+.product_one_img {
+  //border: 1px solid rgb(203, 203, 203);
+}
+
+.product_one_sale {
+  height: 100%;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.product_one_sale_name {
+  height: 20%;
+  font-size: 40px;
+  font-weight: 600px;
+}
+.product_one_sale_price {
+  height: 20%;
+  font-size: 25px;
+}
+.product_one_sale_number {
+  height: 20%;
+  display: flex;
+}
+.product_one_sale_number_name {
+}
+.product_one_sale_number_count {
+  margin-left: 30px;
+}
+.product_one_sale_buy {
+  height: 20%;
 }
